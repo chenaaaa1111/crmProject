@@ -140,7 +140,7 @@ $(function () {
                             '<ul class="childBox">';
             } else {
                 html += '<li class="nav-item">'+
-                            '<a class="navList" href="javascript:;"><span>'+data[i].title+'</span><i class="glyphicon glyphicon-menu-right glyphicon-menu-down" aria-hidden="true"></i></a>'+
+                            '<a class="navList" href="javascript:;"><span>'+data[i].title+'</span><i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i></a>'+
                             '<ul class="childBox">';
             }
             for (var n=0;n<data[i].child.length;n++){
