@@ -34,7 +34,7 @@ $(function () {
                 },
                 {
                     title: '合作客户',
-                    url: ''
+                    url: 'pages/cooperation.html'
                 }
             ]
         },
