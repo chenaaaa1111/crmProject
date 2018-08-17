@@ -17,7 +17,7 @@ $(function () {
             child: [
                 {
                     title: '产品管理',
-                    url: ''
+                    url: 'pages/product.html'
                 },
                 {
                     title: '产品分类',
