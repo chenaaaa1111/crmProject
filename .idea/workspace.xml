@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fabefda2-a4b1-4d82-a11e-6eb4ef151446" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/product.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/diaLog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/case.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/product.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/case.css" afterPath="$PROJECT_DIR$/css/case.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/nav.js" afterPath="$PROJECT_DIR$/js/nav.js" />
-    </list>
+    <list default="true" id="fabefda2-a4b1-4d82-a11e-6eb4ef151446" name="Default" comment="" />
     <ignored path="crmProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,8 +130,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="488" />
-    <option name="y" value="37" />
+    <option name="x" value="-116" />
+    <option name="y" value="51" />
     <option name="width" value="2031" />
     <option name="height" value="911" />
   </component>
@@ -330,7 +320,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="488" y="37" width="2031" height="911" extended-state="0" />
+    <frame x="-116" y="51" width="2031" height="911" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11289513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
