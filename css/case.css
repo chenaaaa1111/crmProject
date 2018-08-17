@@ -7,7 +7,8 @@
     width: 40px;height: 40px;border-radius: 5px;
 }
 .describe{resize: none;}
-
+.hideCol{display: none;}
+.operation{width: 120px;}
 /*upload css*/
 .fileBox{overflow: hidden;position: relative;}
 .ylimg{margin-left: 15px;width: 468px;height: 62px;border: 1px solid #ccc;padding: 5px;border-radius: 3px;}

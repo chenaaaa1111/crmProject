@@ -21,7 +21,7 @@ $(function () {
                 },
                 {
                     title: '产品分类',
-                    url: ''
+                    url: 'pages/classify.html'
                 }
             ]
         },
@@ -65,7 +65,7 @@ $(function () {
             child: [
                 {
                     title: '发布招聘',
-                    url: ''
+                    url: 'pages/release.html'
                 },
                 {
                     title: '应聘信息',
