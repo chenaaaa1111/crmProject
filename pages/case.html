@@ -97,65 +97,64 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">添加案例</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-
-
-
-                            <label class="col-sm-2 control-label">上传图片</label>
-
-                            <div class="col-sm-10 ylimg">
-                                <div class="card">
-                                    <div class="img-box full">
-                                        <section class="img-section">
-                                            <!-- 						<p class="up-p">作品图片：<span class="up-span">最多可以上传5张图片，马上上传</span></p>
-                                             -->						<div class="z_photo upimg-div clear" >
+                        <label class="col-sm-2 control-label">上传图片</label>
+                        <div class="col-sm-10 ylimg">
+                            <div class="card">
+                                <div class="img-box full">
+                                    <section class="img-section">
+                                        <!-- 						<p class="up-p">作品图片：<span class="up-span">最多可以上传5张图片，马上上传</span></p>
+                                         -->
+                                        <div class="z_photo upimg-div clear">
                                             <section class="z_file fl">
-                                                <img src="../images/a11.png" class="add-img">
-                                                <input type="file" data-descriptions="file" data-required="true"  name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                                                <img src="../images/uploadTips.png" class="add-img">
+                                                <input type="file" data-descriptions="file" data-required="true"
+                                                       name="file" id="file" class="file" value=""
+                                                       accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
                                             </section>
                                         </div>
-                                        </section>
+                                    </section>
+                                </div>
+                                <aside class="mask works-mask">
+                                    <div class="mask-content">
+                                        <p class="del-p ">您确定要删除图片吗？</p>
+                                        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
                                     </div>
-                                    <aside class="mask works-mask">
-                                        <div class="mask-content">
-                                            <p class="del-p ">您确定要删除图片吗？</p>
-                                            <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-                                        </div>
-                                    </aside>
+                                </aside>
 
                             </div>
                         </div>
                     </div>
-                        <div class="form-group">
-                            <label for="title" class="col-sm-2 control-label">标题</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title"/>
-                            </div>
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="title"/>
                         </div>
-                        <div class="form-group">
-                            <label for="classify" class="col-sm-2 control-label">类型</label>
-                            <div class="col-sm-10">
-                                <!--<input type="text" class="form-control" id="classify"/>-->
-                                <select class="form-control" name="classify" id="classify">
-                                    <option value="">请选择</option>
-                                    <option value="">服装类</option>
-                                    <option value="">食品类</option>
-                                    <option value="">运动类</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="classify" class="col-sm-2 control-label">类型</label>
+                        <div class="col-sm-10">
+                            <!--<input type="text" class="form-control" id="classify"/>-->
+                            <select class="form-control" name="classify" id="classify">
+                                <option value="">请选择</option>
+                                <option value="">服装类</option>
+                                <option value="">食品类</option>
+                                <option value="">运动类</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="describe" class="col-sm-2 control-label">描述</label>
-                            <div class="col-sm-10">
-                                <textarea id="describe" class="form-control describe" rows="3"></textarea>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="describe" class="col-sm-2 control-label">描述</label>
+                        <div class="col-sm-10">
+                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
                         </div>
-
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
