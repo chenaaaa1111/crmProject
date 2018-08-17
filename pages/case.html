@@ -5,13 +5,129 @@
     <title>发布案例</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/case.css"/>
+    <link rel="stylesheet" href="../css/page.css"/>
     <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/page.js"></script>
 </head>
 <body>
     <ol class="breadcrumb">
         <li><span>案例管理</span></li>
         <li class="active">发布案例</li>
     </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加案例</button>
+            </div>
+        </div>
+        <div class="row tableRow">
+            <div class="col-xs-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>标题</th>
+                            <th>描述</th>
+                            <th>类型</th>
+                            <th>图片</th>
+                            <th>点赞数量</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adidas运动背包2018秋季新款</td>
+                            <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                            <td>运动类</td>
+                            <td>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                            </td>
+                            <td>15</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                                <button type="button" class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adidas运动背包2018秋季新款</td>
+                            <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                            <td>运动类</td>
+                            <td>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                            </td>
+                            <td>15</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                                <button type="button" class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adidas运动背包2018秋季新款</td>
+                            <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                            <td>运动类</td>
+                            <td>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                                <img src="../images/user.png"/>
+                            </td>
+                            <td>15</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                                <button type="button" class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pageBox"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">添加案例</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="files" class="col-sm-2 control-label">文件上传</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control" id="files"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label">标题</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="title"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="classify" class="col-sm-2 control-label">类型</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="classify"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="describe" class="col-sm-2 control-label">描述</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="describe"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/case.js"></script>
 </body>
 </html>

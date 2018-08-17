@@ -30,7 +30,7 @@ $(function () {
             child: [
                 {
                     title: '发布案例',
-                    url: 'case.html'
+                    url: 'pages/case.html'
                 },
                 {
                     title: '合作客户',
