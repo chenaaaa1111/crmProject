@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfa62c88-cc87-4d65-aac3-498fb15d45de" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product.html" afterPath="$PROJECT_DIR$/pages/product.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-467">
-              <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="469">
+              <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -30,8 +31,12 @@
         <entry file="file://$PROJECT_DIR$/pages/case.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-378">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="169" selection-end-column="7" />
-              <folding />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="7" />
+              <folding>
+                <marker date="1534531209402" expanded="true" signature="7353:7376" ph="..." />
+                <marker date="1534531209402" expanded="true" signature="7353:7395" ph="..." />
+                <marker date="1534531209402" expanded="true" signature="7434:7622" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,8 +60,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="91" />
+    <option name="x" value="88" />
+    <option name="y" value="40" />
     <option name="width" value="1755" />
     <option name="height" value="1070" />
   </component>
@@ -130,16 +135,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534530872234</updated>
-      <workItem from="1534530876271" duration="388000" />
+      <workItem from="1534530876271" duration="842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388000" />
+    <option name="totallyTimeSpent" value="842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="91" width="1755" height="1070" extended-state="0" />
-    <editor active="true" />
+    <frame x="88" y="40" width="1755" height="1070" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24985372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -147,7 +151,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -173,15 +177,19 @@
     <entry file="file://$PROJECT_DIR$/pages/case.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="169" selection-end-column="7" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="7" />
+          <folding>
+            <marker date="1534531209402" expanded="true" signature="7353:7376" ph="..." />
+            <marker date="1534531209402" expanded="true" signature="7353:7395" ph="..." />
+            <marker date="1534531209402" expanded="true" signature="7434:7622" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-467">
-          <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        <state relative-caret-position="469">
+          <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
           <folding />
         </state>
       </provider>
