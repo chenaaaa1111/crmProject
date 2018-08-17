@@ -2,7 +2,7 @@
 .tableRow{margin-top: 20px;}
 .tableRow .table{border: 1px solid #ddd;}
 .tableRow .table>thead:first-child>tr:first-child>th{background-color: #f5f5f5;border-left: 1px solid #ddd;}
-.tableRow .table>tbody>tr>td{padding: 5px;border-left: 1px solid #ddd;vertical-align: middle;}
+.tableRow .table>tbody>tr>td{padding: 5px 10px;border-left: 1px solid #ddd;vertical-align: middle;}
 .tableRow .table>tbody td img{
     width: 40px;height: 40px;border-radius: 5px;
 }
