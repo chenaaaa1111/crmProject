@@ -12,13 +12,13 @@
 </head>
 <body>
 <ol class="breadcrumb">
-    <li><span>产品管理</span></li>
-    <li class="active">产品分类</li>
+    <li><span>人才招聘</span></li>
+    <li class="active">发布招聘</li>
 </ol>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加分类</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">发布招聘</button>
         </div>
     </div>
     <div class="row tableRow">
@@ -27,30 +27,50 @@
                 <thead>
                 <tr>
                     <th class="hideCol">ID</th>
-                    <th>分类名称</th>
+                    <th>招聘职位</th>
+                    <th>招聘部门</th>
+                    <th>招聘人数</th>
+                    <th>薪资待遇</th>
+                    <th>职位描述</th>
+                    <th>工作要求</th>
                     <th class="operation">操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td class="hideCol">001</td>
-                    <td>运动类</td>
+                    <td>前端码农</td>
+                    <td>开发部</td>
+                    <td>1人</td>
+                    <td>6000元</td>
+                    <td>搬砖+加班+搬砖+加班...</td>
+                    <td>不染发不烫头不勾搭同行女朋友</td>
                     <td class="operation">
                         <button type="button" class="btn btn-primary btn-xs">编辑</button>
                         <button type="button" class="btn btn-danger btn-xs">删除</button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="hideCol">002</td>
-                    <td>运动类</td>
+                    <td class="hideCol">001</td>
+                    <td>前端码农</td>
+                    <td>开发部</td>
+                    <td>1人</td>
+                    <td>6000元</td>
+                    <td>搬砖+加班+搬砖+加班...</td>
+                    <td>不染发不烫头不勾搭同行女朋友</td>
                     <td class="operation">
                         <button type="button" class="btn btn-primary btn-xs">编辑</button>
                         <button type="button" class="btn btn-danger btn-xs">删除</button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="hideCol">003</td>
-                    <td>运动类</td>
+                    <td class="hideCol">001</td>
+                    <td>前端码农</td>
+                    <td>开发部</td>
+                    <td>1人</td>
+                    <td>6000元</td>
+                    <td>搬砖+加班+搬砖+加班...</td>
+                    <td>不染发不烫头不勾搭同行女朋友</td>
                     <td class="operation">
                         <button type="button" class="btn btn-primary btn-xs">编辑</button>
                         <button type="button" class="btn btn-danger btn-xs">删除</button>
@@ -67,14 +87,38 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">添加分类</h4>
+                <h4 class="modal-title" id="myModalLabel">添加招聘</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="className" class="col-sm-2 control-label">分类名称</label>
+                        <label for="position" class="col-sm-2 control-label">招聘职位</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="className"/>
+                            <input type="text" class="form-control" id="position"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="department" class="col-sm-2 control-label">招聘部门</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="department"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="col-sm-2 control-label">招聘人数</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="number"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="money" class="col-sm-2 control-label">薪资待遇</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="money"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="describe" class="col-sm-2 control-label">职位描述</label>
+                        <div class="col-sm-10">
+                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
                         </div>
                     </div>
                 </form>
