@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fabefda2-a4b1-4d82-a11e-6eb4ef151446" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/case.css" afterPath="$PROJECT_DIR$/css/case.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/case.html" afterPath="$PROJECT_DIR$/pages/case.html" />
     </list>
     <ignored path="crmProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="case.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/case.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1538463">
-              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.4152249">
+              <caret line="120" column="56" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -35,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="case.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/case.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31141868">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state vertical-scroll-proportion="-6.1538463">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -98,8 +99,8 @@
         <option value="$PROJECT_DIR$/css/page.css" />
         <option value="$PROJECT_DIR$/bootstrap/js/upLoad.js" />
         <option value="$PROJECT_DIR$/js/upLoad.js" />
-        <option value="$PROJECT_DIR$/pages/case.html" />
         <option value="$PROJECT_DIR$/css/case.css" />
+        <option value="$PROJECT_DIR$/pages/case.html" />
       </list>
     </option>
   </component>
@@ -419,21 +420,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/case.html">
+    <entry file="file://$PROJECT_DIR$/css/case.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.1538463">
-          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/case.css">
+    <entry file="file://$PROJECT_DIR$/pages/case.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31141868">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
+        <state vertical-scroll-proportion="0.4152249">
+          <caret line="120" column="56" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -113,13 +113,19 @@
                         <div class="form-group">
                             <label for="classify" class="col-sm-2 control-label">类型</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="classify"/>
+                                <!--<input type="text" class="form-control" id="classify"/>-->
+                                <select class="form-control" name="classify" id="classify">
+                                    <option value="">请选择</option>
+                                    <option value="">服装类</option>
+                                    <option value="">食品类</option>
+                                    <option value="">运动类</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="describe" class="col-sm-2 control-label">描述</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="describe"/>
+                                <textarea id="describe" class="form-control describe" rows="3"></textarea>
                             </div>
                         </div>
                     </form>
