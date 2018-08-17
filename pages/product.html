@@ -2,93 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>产品管理</title>
-    <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css">
-    <link rel="stylesheet" href="../css/product.css"/>
+    <title>发布案例</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/imgUp.css">
+    <link rel="stylesheet" href="../css/case.css"/>
+    <link rel="stylesheet" href="../css/page.css"/>
     <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../js/diaLog.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./../js/imgUp.js"></script>
+    <script src="../js/page.js"></script>
 </head>
 <body>
-
-<div id="tableDiv">
-    <div>
-        <button class="adbtn">添加产品</button>
+<ol class="breadcrumb">
+    <li><span>案例管理</span></li>
+    <li class="active">发布案例</li>
+</ol>
+<div class="container-fluid">
+    <div class="row">
+        <div class="btad">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加产品</button>
+        </div>
     </div>
-    <table class="productItem">
-        <thead>
-        <tr>
-            <td class="inputtd">
-                <input type="checkbox" class="" name=""/>
-            </td>
-            <td>标题</td>
-            <td>描述</td>
-            <td>产品分类</td>
-            <td>图片</td>
-            <td>操作</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><input type="checkbox" name=""/></td>
-            <td>湖南长沙拉萨</td>
-            <td>湖南长沙拉萨</td>
-            <td>湖南长沙拉萨</td>
-            <td class="imgtd"><img src="../images/user.png"/></td>
-            <td>
-                <button class="ui-btn ui-btn-primary showdialog">编辑</button>
-                <button class="ui-btn ui-btn-danger">删除</button>
-            </td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name=""></td>
-            <td>湖南长沙拉萨</td>
-            <td>湖南长沙拉萨</td>
-            <td>湖南长沙拉萨</td>
-            <td class="imgtd"><img src="../images/user.png"/></td>
-            <td>
-                <button class="ui-btn ui-btn-primary showdialog">编辑</button>
-                <button class="ui-btn ui-btn-danger">删除</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <div class="mubandialog dialog">
-        <div class="formDiv ">
-            <form>
-                <div class="ui-form-item ui-border-b">
-                    <label>
-                        标题
-                    </label>
-                    <input type="text" placeholder="18位身份证号码"/>
-                </div>
-                <div class="ui-form-item  ui-border-b">
-                    <label>
-                        描述
-                    </label>
-                    <input type="text" placeholder="请输入描述信息"/>
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="hideCol">ID</th>
+                    <th>标题</th>
+                    <th>描述</th>
+                    <th>产品分类</th>
+                    <th>图片</th>
+                    <th class="operation">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td>Adidas运动背包2018秋季新款</td>
+                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td>运动类</td>
+                    <td>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td>15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">002</td>
+                    <td>Adidas运动背包2018秋季新款</td>
+                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td>运动类</td>
+                    <td>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td>15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">003</td>
+                    <td>Adidas运动背包2018秋季新款</td>
+                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td>运动类</td>
+                    <td>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td>15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pageBox"></div>
+        </div>
 
-                </div>
-                <div class="ui-form-item  ui-border-b">
-                    <label>
-                        产品分类
-                    </label>
-                    <input type="text" placeholder="请输入产品分类"/>
-                </div>
-                <div class="ui-form-item  ui-border-b">
-                    <label>
-                        上传图片
-                    </label>
-                </div>
-                <div class="ui-btn-wrap">
-                    <button class="ui-btn ui-btn-primary">确定</button>
-                    <button class="ui-btn ui-btn-danger hidedialog">取消</button>
-                </div>
-            </form>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加案例</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+
+
+
+                        <label class="col-sm-2 control-label">上传图片</label>
+
+                        <div class="col-sm-10 ">
+                            <input type="text" class="form-control" id="title"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="title"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="classify" class="col-sm-2 control-label">类型</label>
+                        <div class="col-sm-10">
+                            <!--<input type="text" class="form-control" id="classify"/>-->
+                            <select class="form-control" name="classify" id="classify">
+                                <option value="">请选择</option>
+                                <option value="">服装类</option>
+                                <option value="">食品类</option>
+                                <option value="">运动类</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="describe" class="col-sm-2 control-label">描述</label>
+                        <div class="col-sm-10">
+                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
         </div>
     </div>
 </div>
-
+<script src="../js/case.js"></script>
 </body>
 </html>
-
-
