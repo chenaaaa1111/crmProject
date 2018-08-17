@@ -26,24 +26,11 @@ $(function () {
             ]
         },
         {
-            title: '产品管理',
-            child: [
-                {
-                    title: '发布产品',
-                    url: ''
-                },
-                {
-                    title: '产品分类',
-                    url: ''
-                }
-            ]
-        },
-        {
             title: '案例管理',
             child: [
                 {
                     title: '发布案例',
-                    url: ''
+                    url: 'case.html'
                 },
                 {
                     title: '合作客户',
@@ -145,9 +132,9 @@ $(function () {
             }
             for (var n=0;n<data[i].child.length;n++){
                 if (i==0&&n==0) {
-                    html += '<li><a class="childList current" href="'+data[i].child[n].url+'"><span>'+data[i].child[n].title+'</span></a></li>';
+                    html += '<li><a class="childList current" data_url="'+data[i].child[n].url+'"><span>'+data[i].child[n].title+'</span></a></li>';
                 } else {
-                    html += '<li><a class="childList" href="'+data[i].child[n].url+'"><span>'+data[i].child[n].title+'</span></a></li>';
+                    html += '<li><a class="childList" data_url="'+data[i].child[n].url+'"><span>'+data[i].child[n].title+'</span></a></li>';
                 }
 
             }
@@ -172,6 +159,8 @@ $(function () {
             $(".myNavBox .childList").eq(i).removeClass('current');
         }
         $(this).addClass('current');
+        var url = $(this).attr('data_url');
+        $('#myIframe').attr('src',url);
         return false;
     });
 });
