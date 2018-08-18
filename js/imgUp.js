@@ -1,3 +1,4 @@
+var imgArray={};
 $(function(){
 	var delParent;
 	var defaults = {
@@ -21,6 +22,7 @@ $(function(){
 		}
 		else if(numUp < defaults.imgMaxSize){
 			fileList = validateUp(fileList);
+
 			for(var i = 0;i<fileList.length;i++){
 			 var imgUrl = window.URL.createObjectURL(fileList[i]);
 			     imgArr.push(imgUrl);
@@ -47,6 +49,8 @@ $(function(){
 		         $input2.appendTo($section);
 		      
 		   }
+            imgArray.elem=$section;
+			console.log(imgArray)
 		}
 		setTimeout(function(){
              $(".up-section").removeClass("loading");
@@ -102,6 +106,8 @@ $(function(){
 						alert('您这个"'+ file.name +'"没有类型, 无法识别');	
 					}
 			}
+			// localStorage.setItem('imgarray',arrFiles.toString())
+			// console.log(arrFiles)
 			return arrFiles;
 		}
 		
