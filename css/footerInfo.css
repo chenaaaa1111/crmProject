@@ -1,0 +1,16 @@
+.breadcrumb span{color: #999;}
+.breadcrumb>.active {color: #000;}
+.tableRow{margin-top: 15px;}
+.tableRow .table{border: 1px solid #ccc;}
+.tdTitle{
+    width: 102px;border-right: 1px solid #ccc;
+}
+.table td img{
+    width: 150px;height: 150px;border: 1px solid #ccc;
+}
+.fileBtn{width: 80px;height: 34px;overflow: hidden;position: relative;}
+.inputFile{
+    opacity: 0;filter: alpha(opacity: 0);display: block;width: 100%;height: 100%;
+    position: absolute;top: 0;left: 0;
+}
+.fileName{line-height: 34px;}

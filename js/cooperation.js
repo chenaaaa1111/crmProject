@@ -30,6 +30,7 @@ $(function () {
     $('#myModal').on('hide.bs.modal', function () {
         $("#inputFile").val();// 这里清空一下file的值
         $("#title").val('');
+        $(".fileName").text('');
     });
     // 选中文件
     $("#inputFile").change(function (event,file) {
