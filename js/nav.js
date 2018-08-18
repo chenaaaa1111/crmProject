@@ -43,11 +43,11 @@ $(function () {
             child: [
                 {
                     title: '服务说明',
-                    url: ''
+                    url: 'pages/service.html'
                 },
                 {
                     title: '行业优势',
-                    url: ''
+                    url: 'pages/industry.html'
                 }
             ]
         },
