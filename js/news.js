@@ -5,17 +5,17 @@ $(function () {
     // 添加
     $("#add").on("click", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('添加产品');
+        $("#myModalLabel").text('添加资讯');
     });
     // 添加
     $(".add").on("click", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('添加产品');
+        $("#myModalLabel").text('添加资讯');
     });
     // 编辑
     $(".table").on("click",".editRow", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('编辑产品');
+        $("#myModalLabel").text('编辑资讯');
         var id = $(this).parents('tr').find('.hideCol').text();
         var title = $(this).parents("tr").find(".title").text();
         var describe = $(this).parents("tr").find(".describe").text();
