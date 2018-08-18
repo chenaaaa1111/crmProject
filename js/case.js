@@ -3,14 +3,7 @@
  */
 $(function () {
     // 添加
-<<<<<<< HEAD
-=======
-    // 添加
->>>>>>> 1f133ab64d1f3e5c84811c16eaf5ba68b6230e44
     $("#add").on("click", function () {
-        $("#title").val('');
-        $("#describe").val('');
-        $("#classify").val('');
         $("#myModal").modal('show');
         $("#myModalLabel").text('添加产品');
     });
@@ -39,7 +32,6 @@ $(function () {
         var classify = $("#classify").val();
         alert('保存')
     });
-<<<<<<< HEAD
     // 清空
     $('#myModal').on('hide.bs.modal', function () {
         //$("#inputFile").val();// 这里清空一下file的值
@@ -47,8 +39,6 @@ $(function () {
         $("#describe").val('');
         $("#classify").val('');
     });
-=======
->>>>>>> 1f133ab64d1f3e5c84811c16eaf5ba68b6230e44
     // 分页
     $(".pageBox").createPage({
         pageCount: 10,
