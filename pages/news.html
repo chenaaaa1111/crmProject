@@ -19,7 +19,9 @@
 <div>
     <div class="">
         <div class="col-lg-12 btntitle">
-            <button class="btn btn-primary" style="margin-right: 10px">添加栏目</button><button class="btn btn-primary">栏目管理</button>
+            <button class="btn btn-primary" data-target="#myaddleimu" data-toggle="modal"
+                    style="margin-right: 10px">添加栏目</button>
+            <button class="btn btn-primary" data-target="#myedit" data-toggle="modal">栏目管理</button>
         </div>
     </div>
 </div>
@@ -43,7 +45,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12">
-                            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">添加资讯</button>
+                            <button id="add" type="button" class="btn btn-default" data-toggle="modal">添加资讯</button>
                         </div>
                     </div>
                     <div class="row tableRow">
@@ -126,7 +128,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12">
-                            <button  type="button" class="btn btn-primary add" data-toggle="modal">添加资讯</button>
+                            <button  type="button" class="btn btn-primary add"  data-target="#myModal" data-toggle="modal">添加资讯</button>
                         </div>
                     </div>
                     <div class="row tableRow">
@@ -205,8 +207,6 @@
 
             </div>
         </div>
-
-
     </div>
 
 </div>
@@ -259,7 +259,57 @@
         </div>
     </div>
 </div>
+<div class="modal " id="myaddleimu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="">编辑资讯</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">类型</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="leixing"/>
+                        </div>
+                    </div>
 
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal " id="myedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="">编辑资讯</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">类型</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="leix"/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">前置保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="../js/news.js"></script>
 </body>
