@@ -11,4 +11,7 @@ $(function () {
     $(".module").on("click", function () {
         window.open("module.html","_self")
     });
+    $(".footerInfo").on("click", function () {
+        window.open("footerInfo.html","_self")
+    });
 });

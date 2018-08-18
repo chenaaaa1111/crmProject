@@ -26,7 +26,8 @@ $(function () {
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {
-        $("#inputFile").val();
+        $("#inputFile").val('');
+        $(".fileName").text('');
         $("#title").val('');
         $("#describe").val('');
         $("#classify").val('');

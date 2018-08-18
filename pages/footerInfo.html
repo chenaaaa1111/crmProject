@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网站底部信息</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/footerInfo.css"/>
+    <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><span>系统管理</span></li>
+    <li><a href="system.html">系统设置</a></li>
+    <li class="active">网站底部信息</li>
+</ol>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <button id="set" type="button" class="btn btn-primary" data-toggle="modal">设置</button>
+        </div>
+    </div>
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="tdTitle">公司名称：</td>
+                        <td class="name">上海普陀中江软件园区</td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">联系电话1：</td>
+                        <td class="phone1">156789456</td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">联系电话2：</td>
+                        <td class="phone2">156789456</td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">联系地址1：</td>
+                        <td class="address1">上海市普陀区大渡河路长风公园</td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">联系地址2：</td>
+                        <td class="address2">上海市普陀区大渡河路110</td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">微信二维码：</td>
+                        <td class="images">
+                            <img src="../images/ewm.jpg" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">设置信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">公司名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone1" class="col-sm-2 control-label">联系电话1</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="phone1"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone2" class="col-sm-2 control-label">联系电话2</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="phone2"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address1" class="col-sm-2 control-label">联系地址1</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="address1"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address1" class="col-sm-2 control-label">联系地址2</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="address2"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">上传图片</label>
+                        <div class="col-sm-3 ">
+                            <button class="btn btn-primary fileBtn">
+                                文件上传<input type="file" class="inputFile" id="inputFile"/>
+                            </button>
+                        </div>
+                        <div class="col-sm-7 fileName">
+                            <!--// 这里放文件名-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/footerInfo.js"></script>
+</body>
+</html>
