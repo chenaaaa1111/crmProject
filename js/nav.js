@@ -99,7 +99,7 @@ $(function () {
             child: [
                 {
                     title: '客户信息',
-                    url: ''
+                    url: 'pages/customer.html'
                 }
             ]
         },
