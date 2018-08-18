@@ -112,7 +112,7 @@ $(function () {
                 },
                 {
                     title: '系统设置',
-                    url: ''
+                    url: 'pages/system.html'
                 }
             ]
         }
