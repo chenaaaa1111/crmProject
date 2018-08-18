@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>发布案例</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/imgUp.css">
-    <link rel="stylesheet" href="../css/case.css"/>
+    <link rel="stylesheet" href="../css/product.css"/>
     <link rel="stylesheet" href="../css/page.css"/>
     <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="./../js/imgUp.js"></script>
     <script src="../js/page.js"></script>
 </head>
 <body>
@@ -19,8 +17,8 @@
 </ol>
 <div class="container-fluid">
     <div class="row">
-        <div class="btad">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加产品</button>
+        <div class="col-xs-12">
+            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">添加产品</button>
         </div>
     </div>
     <div class="row tableRow">
@@ -39,47 +37,47 @@
                 <tbody>
                 <tr>
                     <td class="hideCol">001</td>
-                    <td>Adidas运动背包2018秋季新款</td>
-                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                    <td>运动类</td>
-                    <td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                     </td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td class="hideCol">002</td>
-                    <td>Adidas运动背包2018秋季新款</td>
-                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                    <td>运动类</td>
-                    <td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                     </td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td class="hideCol">003</td>
-                    <td>Adidas运动背包2018秋季新款</td>
-                    <td>Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                    <td>运动类</td>
-                    <td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                         <img src="../images/user.png"/>
                     </td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 </tbody>
@@ -93,15 +91,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">添加案例</h4>
+                <h4 class="modal-title" id="myModalLabel">添加产品</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">上传图片</label>
-
                         <div class="col-sm-10 ">
-                            <input type="text" class="form-control" id="title"/>
+                            <button class="btn btn-primary fileBtn">
+                                文件上传<input type="file" class="inputFile" id="inputFile"/>
+                            </button>
                         </div>
                     </div>
                     <div class="form-group">
@@ -116,9 +115,9 @@
                             <!--<input type="text" class="form-control" id="classify"/>-->
                             <select class="form-control" name="classify" id="classify">
                                 <option value="">请选择</option>
-                                <option value="">服装类</option>
-                                <option value="">食品类</option>
-                                <option value="">运动类</option>
+                                <option value="服装类">服装类</option>
+                                <option value="食品类">食品类</option>
+                                <option value="运动类">运动类</option>
                             </select>
                         </div>
                     </div>
@@ -133,11 +132,11 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary">保存</button>
+                <button type="button" class="btn btn-primary save">保存</button>
             </div>
         </div>
     </div>
 </div>
-<script src="../js/case.js"></script>
+<script src="../js/product.js"></script>
 </body>
 </html>

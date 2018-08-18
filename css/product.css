@@ -1,68 +1,16 @@
-#tableDiv{
-    width: 100%;
-    min-width: 600px;
-   padding: 10px;
-   background: #fff;
-
+.breadcrumb span{color: #999;}
+.tableRow{margin-top: 20px;}
+.tableRow .table{border: 1px solid #ddd;}
+.tableRow .table>thead:first-child>tr:first-child>th{background-color: #f5f5f5;border-left: 1px solid #ddd;}
+.tableRow .table>tbody>tr>td{padding: 5px;border-left: 1px solid #ddd;vertical-align: middle;}
+.tableRow .table>tbody td img{
+    width: 40px;height: 40px;border-radius: 5px;
 }
-.productItem{
-    width: 100%;
-    margin-top: 20px;
-}
-.productItem td{
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
-    border: #eee 1px solid;
-}
-.imgtd img{
-    max-width: 100%;
-    width: 200px;
-    max-height: 200px;
-    width: 48px;
-    height: 48px;
-}
-.tableDiv{
-}
-.inputtd{
-    width: 40px;
-}
-thead td{
-    background: #eee;
-}
-*{
-    box-sizing: border-box;
-}
-.adbtn{
-        display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    padding: 0 18px;
-    background-color: #009688;
-    color: #fff;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.mubandialog{
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    width: 100%;
-
-}
-.dialog{
-    display: none;
-}
-.formDiv{
-       background: #fff;
-    width: 600px;
-    padding: 20px 20px  40px 20px;
-   margin:0 auto; 
-   margin-top: 30px;
-   
+.describe{resize: none;}
+.hideCol{display: none;}
+.operation{width: 120px;}
+.fileBtn{width: 80px;height: 34px;overflow: hidden;position: relative;}
+.inputFile{
+    opacity: 0;filter: alpha(opacity: 0);display: block;width: 100%;height: 100%;
+    position: absolute;top: 0;left: 0;
 }

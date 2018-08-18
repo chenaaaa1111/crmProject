@@ -16,7 +16,7 @@ $(function () {
             title: '产品管理',
             child: [
                 {
-                    title: '产品管理',
+                    title: '发布产品',
                     url: 'pages/product.html'
                 },
                 {
