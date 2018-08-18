@@ -108,7 +108,7 @@ $(function () {
             child: [
                 {
                     title: '操作员管理',
-                    url: ''
+                    url: 'pages/worker.html'
                 },
                 {
                     title: '系统设置',

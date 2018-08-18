@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>发布案例</title>
+    <title>操作员管理</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/worker.css"/>
     <link rel="stylesheet" href="../css/page.css"/>
@@ -12,13 +12,13 @@
 </head>
 <body>
 <ol class="breadcrumb">
-    <li><span>人才招聘</span></li>
-    <li class="active">发布招聘</li>
+    <li><span>系统管理</span></li>
+    <li class="active">操作员管理</li>
 </ol>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12">
-            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">发布招聘</button>
+            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">添加员工</button>
         </div>
     </div>
     <div class="row tableRow">
@@ -27,53 +27,53 @@
                 <thead>
                 <tr>
                     <th class="hideCol">ID</th>
-                    <th>招聘职位</th>
-                    <th>招聘部门</th>
-                    <th>招聘人数</th>
-                    <th>薪资待遇</th>
-                    <th>职位描述</th>
-                    <th>工作要求</th>
+                    <th>员工编号</th>
+                    <th>员工姓名</th>
+                    <th>手机号</th>
+                    <th>账号</th>
+                    <th>密码</th>
+                    <th>状态</th>
                     <th class="operation">操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td class="hideCol">001</td>
-                    <td>前端码农</td>
-                    <td>开发部</td>
-                    <td>1人</td>
-                    <td>6000元</td>
-                    <td>搬砖+加班+搬砖+加班...</td>
-                    <td>不染发不烫头不勾搭同行女朋友</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">禁用</td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td class="hideCol">001</td>
-                    <td>前端码农</td>
-                    <td>开发部</td>
-                    <td>1人</td>
-                    <td>6000元</td>
-                    <td>搬砖+加班+搬砖+加班...</td>
-                    <td>不染发不烫头不勾搭同行女朋友</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">禁用</td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td class="hideCol">001</td>
-                    <td>前端码农</td>
-                    <td>开发部</td>
-                    <td>1人</td>
-                    <td>6000元</td>
-                    <td>搬砖+加班+搬砖+加班...</td>
-                    <td>不染发不烫头不勾搭同行女朋友</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">启用</td>
                     <td class="operation">
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
                     </td>
                 </tr>
                 </tbody>
@@ -87,45 +87,56 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">添加招聘</h4>
+                <h4 class="modal-title" id="myModalLabel">添加员工</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="position" class="col-sm-2 control-label">招聘职位</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="position"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="department" class="col-sm-2 control-label">招聘部门</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="department"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="number" class="col-sm-2 control-label">招聘人数</label>
+                        <label for="number" class="col-sm-2 control-label">员工编号</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="number"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="money" class="col-sm-2 control-label">薪资待遇</label>
+                        <label for="name" class="col-sm-2 control-label">员工姓名</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="money"/>
+                            <input type="text" class="form-control" id="name"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="describe" class="col-sm-2 control-label">职位描述</label>
+                        <label for="phone" class="col-sm-2 control-label">手机号</label>
                         <div class="col-sm-10">
-                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
+                            <input type="text" class="form-control" id="phone"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="user" class="col-sm-2 control-label">账号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">状态</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadio" value="启用" checked> 启用
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadio" value="禁用"> 禁用
+                            </label>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary">保存</button>
+                <button type="button" class="btn btn-primary save">保存</button>
             </div>
         </div>
     </div>
