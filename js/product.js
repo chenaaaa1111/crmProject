@@ -44,7 +44,7 @@ $(function () {
         var namarry = $(this).val().split("\\");
         var sname = namarry[namarry.length - 1];
         $(".fileName").text(sname);
-    })
+    });
     //分页
     $(".pageBox").createPage({
         pageCount: 10,
