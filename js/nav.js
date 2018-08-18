@@ -78,7 +78,7 @@ $(function () {
             child: [
                 {
                     title: '公司简介',
-                    url: ''
+                    url: 'pages/introduction.html'
                 },
                 {
                     title: '团队信息',
