@@ -4,65 +4,22 @@
     <meta charset="UTF-8">
     <title>系统设置</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/page.css"/>
+    <link rel="stylesheet" href="../css/logo.css"/>
     <link rel="stylesheet" href="../css/imgUp.css">
     <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script>
-     var opt={
-            imgMaxSize:1
+        var opt = {
+            imgMaxSize: 1
         }
     </script>
     <script src="../js/imgUp.js"></script>
-    <style>
 
-        .inlineblock{
-            display: inline-block;
-        }
-        .mr_t_20{
-            margin-top: 20px;
-        }
-        .logo{
-            width: 200px;
-        }
-        .logoDiv{
-            border:1px solid #cccccc;
-            padding:10px;
-            width: 400px;
-        }
-        .card{
-            vertical-align: middle;
-        }
-        .z_file .add-img{
-            width: 100px;
-        }
-        .upimg-div .up-section{
-            width: 100px;
-        }
-        .card{
-            vertical-align: middle;
-            border: 2px dashed #ccc;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding: 10px;
-        }
-        .img-box .upimg-div .z_file img{
-            max-width: 100%;
-        }
-        #add{
-            margin-top: 20px;
-        }
-        .img-box .upimg-div .z_file{
-            margin-bottom: 0px;
-            
-        }
-
-    </style>
 </head>
 <body>
 <ol class="breadcrumb">
     <li><span>系统管理</span></li>
-    <li ><a href="system.html">系统设置</a> </li>
+    <li><a href="system.html">系统设置</a></li>
     <li class="active">公司Logo</li>
 </ol>
 <div class="container-fluid">
@@ -73,7 +30,7 @@
     <div class="row mr_t_20">
         <div class="col-sm-12">
             <div class="form-group btad">
-                <label for="name" class="">公司Logo：</label>
+                <label class="">公司Logo：</label>
                 <div class="inlineblock logoDiv">
                     <img src="./../images/logo.jpg" class="logo">
                 </div>
@@ -83,7 +40,7 @@
     <div class="row">
         <form action="">
             <div class="col-sm-12 ">
-                <label for="name" class="">更改Logo：</label>
+                <label class="">更改Logo：</label>
                 <div class="card inlineblock">
                     <div class="img-box full">
                         <section class="img-section">
@@ -102,7 +59,8 @@
                     <aside class="mask works-mask">
                         <div class="mask-content">
                             <p class="del-p ">您确定要删除图片吗？</p>
-                            <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+                            <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span>
+                            </p>
                         </div>
                     </aside>
 
@@ -111,7 +69,8 @@
             <div class="col-lg-12">
                 <div class="">
                     <button id="add" type="button" class="btn btn-primary"
-                            data-target="#myModal"  data-toggle="modal">上传</button>
+                            data-target="#myModal" data-toggle="modal">上传
+                    </button>
                 </div>
             </div>
         </form>
