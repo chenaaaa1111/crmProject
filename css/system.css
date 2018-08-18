@@ -1,4 +1,5 @@
 .breadcrumb span{color: #999;}
+.breadcrumb>.active {color: #000;}
 .tableRow{margin-top: 20px;}
 .btnBoxLg .btn{
     width: 200px;height: 50px;display: inline-block;margin-bottom: 10px;

@@ -1,4 +1,5 @@
 .breadcrumb span{color: #999;}
+.breadcrumb>.active {color: #000;}
 .tableRow{margin-top: 20px;}
 .tableRow .table{border: 1px solid #ddd;}
 .tableRow .table>thead:first-child>tr:first-child>th{background-color: #f5f5f5;border-left: 1px solid #ddd;}

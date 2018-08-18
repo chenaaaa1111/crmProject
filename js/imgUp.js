@@ -6,6 +6,9 @@ $(function(){
 		fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
 		imgMaxSize:5
 	};
+	console.log('opt',opt)
+	defaults=$.extend({},defaults,opt);
+	console.log('defaults',defaults);
 		/*点击图片的文本框*/
 	$(".file").change(function(){	 
 		var idFile = $(this).attr("id");
@@ -18,7 +21,7 @@ $(function(){
 		var numUp = imgContainer.find(".up-section").length;
 		var totalNum = numUp + fileList.length;  //总的数量
 		if(fileList.length > defaults.imgMaxSize || totalNum > defaults.imgMaxSize ){
-			alert("上传图片数目不可以超过5个，请重新选择");  //一次选择上传超过5个 或者是已经上传和这次上传的到的总数也不可以超过5个
+			alert("上传图片数目不可以超过"+defaults.imgMaxSize+"个，请重新选择");  //一次选择上传超过5个 或者是已经上传和这次上传的到的总数也不可以超过5个
 		}
 		else if(numUp < defaults.imgMaxSize){
 			fileList = validateUp(fileList);
