@@ -56,7 +56,7 @@ $(function () {
             child: [
                 {
                     title: '资讯管理',
-                    url: ''
+                    url: 'pages/news.html'
                 }
             ]
         },
