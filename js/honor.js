@@ -5,25 +5,17 @@ $(function () {
     // 添加
     $("#add").on("click", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('添加产品');
+        $("#myModalLabel").text('添加说明');
     });
     // 编辑
     $(".table").on("click",".editRow", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('编辑产品');
+        $("#myModalLabel").text('编辑说明');
         var id = $(this).parents('tr').find('.hideCol').text();
-        var position = $(this).parents("tr").find(".position").text();
-        var department = $(this).parents("tr").find(".department").text();
-        var number = $(this).parents("tr").find(".number").text();
-        var money = $(this).parents("tr").find(".money").text();
+        var title = $(this).parents("tr").find(".title").text();
         var describe = $(this).parents("tr").find(".describe").text();
-        var condition = $(this).parents("tr").find(".condition").text();
-        $("#position").val(position);
-        $("#department").val(department);
-        $("#number").val(number);
-        $("#money").val(money);
+        $("#title").val(title);
         $("#describe").val(describe);
-        $("#condition").val(condition);
     });
     // 删除
     $(".table").on("click",".delete", function () {
@@ -33,22 +25,21 @@ $(function () {
     // 保存
     $(".save").on("click", function () {
         var id = $(this).parents('tr').find('.hideCol').text();
-        var position = $("#position").val();
-        var department = $("#department").val();
-        var number = $("#number").val();
-        var money = $("#money").val();
-        var describe = $("#describe").val();
-        var condition = $("#condition").val();
+        var title = $("#title").val();
         alert('保存')
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {
-        $("#position").val('');
-        $("#department").val('');
-        $("#number").val('');
-        $("#money").val('');
+        $("#inputFile").val('');// 这里清空一下file的值
+        $(".fileName").text('');
+        $("#title").val('');
         $("#describe").val('');
-        $("#condition").val('');
+    });
+    // 选中文件
+    $("#inputFile").change(function (event,file) {
+        var namarry = $(this).val().split("\\");
+        var sname = namarry[namarry.length - 1];
+        $(".fileName").text(sname);
     });
     // 分页
     $(".pageBox").createPage({

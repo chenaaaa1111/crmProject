@@ -18,7 +18,7 @@
                     obj.append('<a href="javascript:;" class="prevPage">上一页</a>');
                 }else{
                     obj.remove('.prevPage');
-                    obj.append('<span class="disabled">下一页</span>');
+                    obj.append('<span class="disabled">首页</span>');
                 }
                 //涓棿椤电爜
                 if(args.current != 1 && args.current >= 4 && args.pageCount != 4){
@@ -51,7 +51,7 @@
                 }
                 //涓嬩竴椤�
                 if(args.current < args.pageCount){
-                    obj.append('<a href="javascript:;" class="nextPage">首页</a>');
+                    obj.append('<a href="javascript:;" class="nextPage">下一页</a>');
                 }else{
                     obj.remove('.nextPage');
                     obj.append('<span class="disabled">尾页</span>');

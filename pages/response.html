@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布案例</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/release.css"/>
+    <link rel="stylesheet" href="../css/page.css"/>
+    <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/page.js"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><span>人才招聘</span></li>
+    <li class="active">应聘信息</li>
+</ol>
+<div class="container-fluid">
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="hideCol">ID</th>
+                    <th>应聘者姓名</th>
+                    <th>性别</th>
+                    <th>学历</th>
+                    <th>年龄</th>
+                    <th>专业技能</th>
+                    <th>联系电话</th>
+                    <th class="operation">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="name">不撸不舒服斯基</td>
+                    <td class="sex">男</td>
+                    <td class="education">大专</td>
+                    <td class="age">25</td>
+                    <td class="skill">搬砖红旗手</td>
+                    <td class="phone">13838389438</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">查看</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="name">不撸不舒服斯基</td>
+                    <td class="sex">男</td>
+                    <td class="education">大专</td>
+                    <td class="age">25</td>
+                    <td class="skill">搬砖红旗手</td>
+                    <td class="phone">13838389438</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">查看</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="name">不撸不舒服斯基</td>
+                    <td class="sex">男</td>
+                    <td class="education">大专</td>
+                    <td class="age">25</td>
+                    <td class="skill">搬砖红旗手</td>
+                    <td class="phone">13838389438</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">查看</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pageBox"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">应聘者详情</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">应聘者姓名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex" class="col-sm-2 control-label">性别</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="sex" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="education" class="col-sm-2 control-label">学历</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="education" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age" class="col-sm-2 control-label">年龄</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="age" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="skill" class="col-sm-2 control-label">专业技能</label>
+                        <div class="col-sm-10">
+                            <textarea id="skill" class="form-control describe" rows="3" disabled></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">联系电话</label>
+                        <div class="col-sm-10">
+                            <textarea id="phone" class="form-control describe" rows="3" disabled></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/response.js"></script>
+</body>
+</html>

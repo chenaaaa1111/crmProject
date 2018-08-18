@@ -69,7 +69,7 @@ $(function () {
                 },
                 {
                     title: '应聘信息',
-                    url: ''
+                    url: 'pages/response.html'
                 }
             ]
         },
@@ -82,15 +82,15 @@ $(function () {
                 },
                 {
                     title: '团队信息',
-                    url: ''
+                    url: 'pages/teamInfo.html'
                 },
                 {
                     title: '企业文化',
-                    url: ''
+                    url: 'pages/culture.html'
                 },
                 {
                     title: '荣誉资质',
-                    url: ''
+                    url: 'pages/honor.html'
                 }
             ]
         },
