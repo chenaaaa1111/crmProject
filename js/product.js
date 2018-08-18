@@ -35,10 +35,10 @@ $(function () {
         alert('保存')
     });
     // 选中文件
-    $("#inputFile").change(function () {
-        var name = $(this).val();
-        console.log(name)
-        $(".fileName").text(name);
+    $("#inputFile").change(function (event,file) {
+        var namarry = $(this).val().split("\\");
+        var sname=namarry[namarry.length-1];
+        $(".fileName").text(sname);
     });
     //分页
     $(".pageBox").createPage({
