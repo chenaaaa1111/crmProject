@@ -3,7 +3,6 @@
  */
 $(function () {
     // 添加
-    // 添加
     $("#add").on("click", function () {
         $("#title").val('');
         $("#describe").val('');
