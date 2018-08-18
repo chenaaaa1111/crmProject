@@ -29,6 +29,7 @@ $(function () {
     });
     // 保存
     $(".save").on("click", function () {
+        var id = $(this).parents('tr').find('.hideCol').text();
         var title = $("#title").val();
         var describe = $("#describe").val();
         var classify = $("#classify").val();
@@ -37,9 +38,9 @@ $(function () {
     // 选中文件
     $("#inputFile").change(function (event,file) {
         var namarry = $(this).val().split("\\");
-        var sname=namarry[namarry.length-1];
+        var sname = namarry[namarry.length - 1];
         $(".fileName").text(sname);
-    });
+    })
     //分页
     $(".pageBox").createPage({
         pageCount: 10,
