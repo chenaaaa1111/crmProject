@@ -30,11 +30,15 @@ $(function () {
         var title = $("#title").val();
         var describe = $("#describe").val();
         var classify = $("#classify").val();
+        var imgarry=imgArray.elem;
+        console.log('case',imgarry);
         alert('保存')
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {
-        //$("#inputFile").val();// 这里清空一下file的值
+        console.log(123);
+        $(".up-section").remove();
+        $("#inputFile").val();// 这里清空一下file的值
         $("#title").val('');
         $("#describe").val('');
         $("#classify").val('');
