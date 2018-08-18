@@ -34,6 +34,12 @@ $(function () {
         var classify = $("#classify").val();
         alert('保存')
     });
+    // 选中文件
+    $("#inputFile").change(function () {
+        var name = $(this).val();
+        console.log(name)
+        $(".fileName").text(name);
+    });
     //分页
     $(".pageBox").createPage({
         pageCount: 10,
