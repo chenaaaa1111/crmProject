@@ -29,6 +29,7 @@ $(function () {
     });
     // 保存
     $(".save").on("click", function () {
+        var id = $(this).parents('tr').find('.hideCol').text();
         var title = $("#title").val();
         var describe = $("#describe").val();
         var classify = $("#classify").val();
@@ -37,7 +38,6 @@ $(function () {
     // 选中文件
     $("#inputFile").change(function () {
         var name = $(this).val();
-        console.log(name)
         $(".fileName").text(name);
     });
     //分页
