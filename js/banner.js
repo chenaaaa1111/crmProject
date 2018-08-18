@@ -5,12 +5,12 @@ $(function () {
     // 添加
     $("#add").on("click", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('添加客户');
+        $("#myModalLabel").text('添加Banner');
     });
     // 编辑
     $(".table").on("click",".editRow", function () {
         $("#myModal").modal('show');
-        $("#myModalLabel").text('编辑客户信息');
+        $("#myModalLabel").text('编辑Banner信息');
         var id = $(this).parents('tr').find('.hideCol').text();
         var title = $(this).parents("tr").find(".title").text();
         $("#title").val(title);
