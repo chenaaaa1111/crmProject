@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>网站底部信息</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/footerInfo.css"/>
+    <link rel="stylesheet" href="../css/contact.css"/>
     <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -12,7 +12,7 @@
 <ol class="breadcrumb">
     <li><span>系统管理</span></li>
     <li><a href="system.html">系统设置</a></li>
-    <li class="active">网站底部信息</li>
+    <li class="active">[联系我们]页相关信息</li>
 </ol>
 <div class="container-fluid">
     <div class="row">
@@ -24,32 +24,36 @@
         <div class="col-xs-12">
             <table class="table">
                 <tbody>
-                    <tr>
-                        <td class="tdTitle">公司名称</td>
-                        <td class="name">上海普陀中江软件园区</td>
-                    </tr>
-                    <tr>
-                        <td class="tdTitle">联系电话1</td>
-                        <td class="phone1">156789456</td>
-                    </tr>
-                    <tr>
-                        <td class="tdTitle">联系电话2</td>
-                        <td class="phone2">156789456</td>
-                    </tr>
-                    <tr>
-                        <td class="tdTitle">联系地址1</td>
-                        <td class="address1">上海市普陀区大渡河路长风公园</td>
-                    </tr>
-                    <tr>
-                        <td class="tdTitle">联系地址2</td>
-                        <td class="address2">上海市普陀区大渡河路110</td>
-                    </tr>
-                    <tr>
-                        <td class="tdTitle">微信二维码</td>
-                        <td class="images">
-                            <img src="../images/ewm.jpg" />
-                        </td>
-                    </tr>
+                <tr>
+                    <td class="tdTitle">联系方式类型1</td>
+                    <td class="contact1">上海普陀中江软件园区</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">电话/手机号1</td>
+                    <td class="phone1">156789456</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">联系方式类型2</td>
+                    <td class="contact2">156789456</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">电话/手机号2</td>
+                    <td class="phone2">上海市普陀区大渡河路长风公园</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">地址1</td>
+                    <td class="address1">上海市普陀区大渡河路110</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">地址2</td>
+                    <td class="address2">上海市普陀区大渡河路110</td>
+                </tr>
+                <tr>
+                    <td class="tdTitle">图片</td>
+                    <td class="images">
+                        <img src="../images/ewm.jpg" />
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -61,48 +65,54 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">设置信息</h4>
+                <h4 class="modal-title" id="myModalLabel">联系信息设置</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">公司名称</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name"/>
+                        <label for="contact1" class="col-sm-3 control-label">联系方式类型1</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="contact1"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone1" class="col-sm-2 control-label">联系电话1</label>
-                        <div class="col-sm-10">
+                        <label for="phone1" class="col-sm-3 control-label">电话/手机号1</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" id="phone1"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone2" class="col-sm-2 control-label">联系电话2</label>
-                        <div class="col-sm-10">
+                        <label for="contact2" class="col-sm-3 control-label">联系方式类型2</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="contact2"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone2" class="col-sm-3 control-label">电话/手机号2</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" id="phone2"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="address1" class="col-sm-2 control-label">联系地址1</label>
-                        <div class="col-sm-10">
+                        <label for="address1" class="col-sm-3 control-label">地址1</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" id="address1"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="address1" class="col-sm-2 control-label">联系地址2</label>
-                        <div class="col-sm-10">
+                        <label for="address1" class="col-sm-3 control-label">地址2</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" id="address2"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">上传图片</label>
+                        <label class="col-sm-3 control-label">上传图片</label>
                         <div class="col-sm-3 ">
                             <button class="btn btn-primary fileBtn">
                                 文件上传<input type="file" class="inputFile" id="inputFile"/>
                             </button>
                         </div>
-                        <div class="col-sm-7 fileName">
+                        <div class="col-sm-6 fileName">
                             <!--// 这里放文件名-->
                         </div>
                     </div>
@@ -115,6 +125,6 @@
         </div>
     </div>
 </div>
-<script src="../js/footerInfo.js"></script>
+<script src="../js/contact.js"></script>
 </body>
 </html>

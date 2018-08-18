@@ -5,12 +5,14 @@ $(function () {
     // 设置
     $("#set").on("click", function () {
         $("#myModal").modal('show');
-        var name = $(".table").find(".name").text();
+        var contact1 = $(".table").find(".contact1").text();
+        var contact2 = $(".table").find(".contact2").text();
         var phone1 = $(".table").find(".phone1").text();
         var phone2 = $(".table").find(".phone2").text();
         var address1 = $(".table").find(".address1").text();
         var address2 = $(".table").find(".address2").text();
-        $("#name").val(name);
+        $("#contact1").val(contact1);
+        $("#contact2").val(contact2);
         $("#phone1").val(phone1);
         $("#phone2").val(phone2);
         $("#address1").val(address1);
@@ -18,7 +20,8 @@ $(function () {
     });
     // 保存
     $(".save").on("click", function () {
-        var name = $("#name").val();
+        var contact1 = $("#contact1").val();
+        var contact2 = $("#contact2").val();
         var phone1 = $("#phone1").val();
         var phone2 = $("#phone2").val();
         var address1 = $("#address1").val();
