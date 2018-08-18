@@ -4,9 +4,6 @@
 $(function () {
     // 添加
     $("#add").on("click", function () {
-        $("#title").val('');
-        $("#describe").val('');
-        $("#classify").val('');
         $("#myModal").modal('show');
         $("#myModalLabel").text('添加产品');
     });
@@ -26,6 +23,13 @@ $(function () {
     $(".table").on("click",".delete", function () {
         var id = $(this).parents('tr').find('.hideCol').text();
         alert("删除id = "+id+" 的信息");
+    });
+    // 清空
+    $('#myModal').on('hide.bs.modal', function () {
+        $("#inputFile").val();
+        $("#title").val('');
+        $("#describe").val('');
+        $("#classify").val('');
     });
     // 保存
     $(".save").on("click", function () {

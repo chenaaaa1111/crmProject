@@ -36,6 +36,13 @@ $(function () {
         var classify = $("#classify").val();
         alert('保存')
     });
+    // 清空
+    $('#myModal').on('hide.bs.modal', function () {
+        //$("#inputFile").val();// 这里清空一下file的值
+        $("#title").val('');
+        $("#describe").val('');
+        $("#classify").val('');
+    });
     // 分页
     $(".pageBox").createPage({
         pageCount: 10,
