@@ -21,5 +21,8 @@ $(function () {
     $(".error").on("click", function () {
         window.open("errorOther.html","_self")
     });
+    $(".webbanner").on("click", function () {
+        window.open("webbanner.html","_self")
+    });
 
 });
