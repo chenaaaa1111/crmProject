@@ -15,6 +15,13 @@ $(function () {
         var title = $(this).parents("tr").find(".title").text();
         $("#title").val(title);
     });
+    // 预览图片
+    $(".table").on("click","img", function () {
+        var src = $(this).attr("src");
+        $("#imgModal").modal('show');
+        $("#imgModalLabel").text('编辑产品');
+        $(".ylPic").attr("src",src);
+    });
     // 删除
     $(".table").on("click",".delete", function () {
         var id = $(this).parents('tr').find('.hideCol').text();
