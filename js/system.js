@@ -3,7 +3,7 @@
  */
 $(function () {
     $(".logo").on("click", function () {
-        window.open("www.baidu.com","_self")
+        window.open("Logo.html","_self")
     });
     $(".banner").on("click", function () {
         window.open("banner.html","_self")
@@ -16,5 +16,8 @@ $(function () {
     });
     $(".contact").on("click", function () {
         window.open("contact.html","_self")
+    });
+    $(".error").on("click", function () {
+        window.open("errorOther.html","_self")
     });
 });
