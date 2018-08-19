@@ -105,30 +105,8 @@
                 <form class="form-horizontal">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">上传图片</label>
-                        <div class="col-sm-10 ylimg">
-                            <div class="card">
-                                <div class="img-box full">
-                                    <section class="img-section">
-                                        <!-- 						<p class="up-p">作品图片：<span class="up-span">最多可以上传5张图片，马上上传</span></p>
-                                         -->
-                                        <div class="z_photo upimg-div clear">
-                                            <section class="z_file fl">
-                                                <img src="../images/uploadTips.png" class="add-img">
-                                                <input type="file" data-descriptions="file" data-required="true"
-                                                       name="file" id="file" class="file" value=""
-                                                       accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
-                                            </section>
-                                        </div>
-                                    </section>
-                                </div>
-                                <aside class="mask works-mask">
-                                    <div class="mask-content">
-                                        <p class="del-p ">您确定要删除图片吗？</p>
-                                        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-                                    </div>
-                                </aside>
+                        <div class="col-sm-10 ylimg" id="imgUp">
 
-                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -214,15 +192,14 @@
     </div>
 </div>
 <script src="../js/case.js"></script>
-<script src="./../js/imgupobj.js"></script>
+<script src="./../js/ImgUpLib.js"></script>
 
 <script>
-    var opt = {
-        imgMaxSize: 5
-    }
-    var imgup=new ImgObj({
-        imgMaxSize: 5
-    })
+    ImgUpLib.init({el:"#imgUp",
+        fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
+        fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
+        imgMaxSize:5});
+
 </script>
 </body>
 </html>
