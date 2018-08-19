@@ -17,4 +17,5 @@ $(function () {
     $(".contact").on("click", function () {
         window.open("contact.html","_self")
     });
+ 
 });

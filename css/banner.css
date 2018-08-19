@@ -16,3 +16,16 @@
     position: absolute;top: 0;left: 0;
 }
 .fileName{line-height: 34px;}
+.card{
+    padding: 10px;
+    border: 1px dashed #ccc;
+    text-shadow: 0 0 black;
+}
+.img-box .upimg-div .z_file{
+    margin-bottom: 0;
+}
+.upimg-div .up-section{
+    width: 100%;
+    height: 90px;
+
+}
