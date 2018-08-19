@@ -17,6 +17,11 @@ $(function () {
         $("#title").val(title);
         $("#describe").val(describe);
     });
+    // 预览图片
+    $(".table").on("click","img", function () {
+        $("#imgModal").modal('show');
+        $("#imgModalLabel").text('编辑产品');
+    });
     // 删除
     $(".table").on("click",".delete", function () {
         var id = $(this).parents('tr').find('.hideCol').text();
