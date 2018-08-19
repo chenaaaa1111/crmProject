@@ -11,9 +11,7 @@ $(function(){
         if(opt){
             option=opt;
         }
-        console.log('opt',opt)
         defaults=$.extend({},defaults,option);
-        console.log('defaults',defaults);
         /*点击图片的文本框*/
         $(".file").change(function(){
             var idFile = $(this).attr("id");
@@ -132,9 +130,7 @@ $(function(){
 	if(opt){
         option=opt;
 	}
-	console.log('opt',opt)
 	defaults=$.extend({},defaults,option);
-	console.log('defaults',defaults);
 		/*点击图片的文本框*/
 	$(".file").change(function(){	 
 		var idFile = $(this).attr("id");
@@ -179,7 +175,6 @@ $(function(){
 		      
 		   }
             imgArray.elem=$section;
-			console.log(imgArray)
 		}
 		setTimeout(function(){
              $(".up-section").removeClass("loading");
@@ -218,7 +213,6 @@ $(function(){
 				var newStr = file.name.split("").reverse().join("");
 				if(newStr.split(".")[0] != null){
 						var type = newStr.split(".")[0].split("").reverse().join("");
-						console.log(type+"===type===");
 						if(jQuery.inArray(type, defaults.fileType) > -1){
 							// 类型符合，可以上传
 							if (file.size >= defaults.fileSize) {
