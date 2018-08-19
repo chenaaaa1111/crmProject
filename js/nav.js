@@ -9,10 +9,6 @@ $(function () {
                 {
                     title: '数据统计',
                     url: 'pages/count.html'
-                },
-                {
-                    title: '股权结构',
-                    url: ''
                 }
             ]
         },

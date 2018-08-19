@@ -1,0 +1,10 @@
+.breadcrumb span{color: #999;}
+.breadcrumb>.active {color: #000;}
+.btntitle{
+    padding-bottom: 10px;
+}
+.addNews{background:#2F4056;color:#fff;
+}
+.tab-pane{padding-top: 20px;  }
+.row.ml12{margin-left:0px;}
+.ylPic{width: 568px;}

@@ -25,10 +25,18 @@ $(function () {
         $("#describe").val(describe);
         $("#condition").val(condition);
     });
-    // 删除
+    var colId = '';
+    // 点击删除按钮打开弹框
     $(".table").on("click",".delete", function () {
-        var id = $(this).parents('tr').find('.hideCol').text();
-        alert("删除id = "+id+" 的信息");
+        colId = $(this).parents('tr').find('.hideCol').text();
+        $("#errModal").modal('show');
+        $("#errModalLabel").text('提示信息');
+        //alert("删除id = "+id+" 的信息");
+    });
+    // 确认删除
+    $(".deleteCol").on("click", function () {
+        console.log("确认删除 id = "+colId+"的信息")
+        $("#errModal").modal('hide');
     });
     // 保存
     $(".save").on("click", function () {
@@ -39,7 +47,7 @@ $(function () {
         var money = $("#money").val();
         var describe = $("#describe").val();
         var condition = $("#condition").val();
-        alert('保存')
+        $("#failModal").modal('show');
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {

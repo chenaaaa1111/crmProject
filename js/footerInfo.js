@@ -6,24 +6,24 @@ $(function () {
     $("#set").on("click", function () {
         $("#myModal").modal('show');
         var name = $(".table").find(".name").text();
-        var phone1 = $(".table").find(".phone1").text();
-        var phone2 = $(".table").find(".phone2").text();
-        var address1 = $(".table").find(".address1").text();
-        var address2 = $(".table").find(".address2").text();
+        var slogan = $(".table").find(".slogan").text();
+        var phone = $(".table").find(".phone").text();
+        var address = $(".table").find(".address").text();
+        var email = $(".table").find(".email").text();
         $("#name").val(name);
-        $("#phone1").val(phone1);
-        $("#phone2").val(phone2);
-        $("#address1").val(address1);
-        $("#address2").val(address2);
+        $("#slogan").val(slogan);
+        $("#phone").val(phone);
+        $("#address").val(address);
+        $("#email").val(email);
     });
     // 保存
     $(".save").on("click", function () {
         var name = $("#name").val();
-        var phone1 = $("#phone1").val();
-        var phone2 = $("#phone2").val();
-        var address1 = $("#address1").val();
-        var address2 = $("#address2").val();
-        alert('保存')
+        var slogan = $("#slogan").val();
+        var phone = $("#phone").val();
+        var address = $("#address").val();
+        var email = $("#email").val();
+        $("#failModal").modal('show');
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {

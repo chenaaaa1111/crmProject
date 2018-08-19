@@ -16,16 +16,14 @@
     <li><span>资讯管理</span></li>
     <li class="active">资讯管理</li>
 </ol>
-<div>
-    <div class="">
+<div class="container-fluid">
+    <div class="row">
         <div class="col-lg-12 btntitle">
             <button class="btn btn-primary" data-target="#myaddleimu" data-toggle="modal"
                     style="margin-right: 10px">添加栏目</button>
             <button class="btn btn-primary" data-target="#myedit" data-toggle="modal">栏目管理</button>
         </div>
     </div>
-</div>
-<div class="">
     <div class="row ml12">
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs">
@@ -38,179 +36,88 @@
             </ul>
         </div>
     </div>
-
-    <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in active" id="home">
-            <div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <button id="add" type="button" class="btn btn-default" data-toggle="modal">添加资讯</button>
-                        </div>
-                    </div>
-                    <div class="row tableRow">
-                        <div class="col-xs-12">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="hideCol">ID</th>
-                                        <th>资讯标题</th>
-                                        <th>摘要</th>
-                                        <th>图片</th>
-                                        <th>来源</th>
-                                        <th>发布时间</th>
-                                        <th>阅读量</th>
-                                        <th class="operation">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div class="pageBox"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="ios">
-            <div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <button  type="button" class="btn btn-primary add"  data-target="#myModal" data-toggle="modal">添加资讯</button>
-                        </div>
-                    </div>
-                    <div class="row tableRow">
-                        <div class="col-xs-12">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th class="hideCol">ID</th>
-                                    <th>资讯标题</th>
-                                    <th>摘要</th>
-                                    <th>图片</th>
-                                    <th>来源</th>
-                                    <th>发布时间</th>
-                                    <th>阅读量</th>
-                                    <th class="operation">操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="hideCol">001</td>
-                                    <td class="title">Adidas运动背包2018秋季新款</td>
-                                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
-                                    <td class="images">
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                        <img src="../images/user.png"/>
-                                    </td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="classify">运动类</td>
-                                    <td class="operation">
-                                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
-                                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div class="pageBox"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12" style="margin-top: 20px;">
+            <button id="add" type="button" class="btn btn-default" data-toggle="modal">添加资讯</button>
         </div>
     </div>
-
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="hideCol">ID</th>
+                    <th>资讯标题</th>
+                    <th>摘要</th>
+                    <th>图片</th>
+                    <th>来源</th>
+                    <th>发布时间</th>
+                    <th>阅读量</th>
+                    <th class="operation">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="title">Adidas运动背包2018秋季新款</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="classify">运动类</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pageBox"></div>
+        </div>
+    </div>
 </div>
-<div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -243,13 +150,6 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="describe" class="col-sm-2 control-label">来源</label>
-                        <div class="col-sm-10">
-                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
-                        </div>
-                    </div>
-
                 </form>
             </div>
             <div class="modal-footer">
@@ -259,12 +159,12 @@
         </div>
     </div>
 </div>
-<div class="modal " id="myaddleimu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myaddleimu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="">编辑资讯</h4>
+                <h4 class="modal-title">添加栏目</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
@@ -284,12 +184,12 @@
         </div>
     </div>
 </div>
-<div class="modal " id="myedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="">编辑资讯</h4>
+                <h4 class="modal-title" id="">栏目管理</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
@@ -303,7 +203,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">前置保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">前移</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 <button type="button" class="btn btn-primary save">保存</button>
             </div>
@@ -322,6 +222,39 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="errModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel">
+    <div class="modal-dialog" role="document" style="width: 250px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="errModalLabel">提示信息</h4>
+            </div>
+            <div class="modal-body" style="height: 80px;">
+                确定删除本条信息吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger deleteCol">删除</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="failModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel">
+    <div class="modal-dialog" role="document" style="width: 250px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="failModalLabel">提示信息</h4>
+            </div>
+            <div class="modal-body" style="height: 80px;">
+                操作失败!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal">关闭</button>
             </div>
         </div>
     </div>

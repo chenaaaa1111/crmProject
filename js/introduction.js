@@ -17,7 +17,7 @@ $(function () {
         var id = $(this).parents('tr').find('.hideCol').text();
         var title = $("#title").val();
         var text = $("#describe").val();
-        alert('保存')
+        $("#failModal").modal('show');
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {

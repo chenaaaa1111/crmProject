@@ -1,0 +1,13 @@
+.breadcrumb span{color: #999;}
+.breadcrumb>.active {color: #000;}
+.title{
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 15px;
+    font-weight: bold;
+}
+.moduleList{padding-top: 10px;padding-bottom: 10px;}
+.moduleList .checkbox-inline{
+    font-weight: bold;color: #333;
+}
+.sub{color: #999;margin-left: 10px;font-size: 14px;}

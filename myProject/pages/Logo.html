@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统设置</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/logo.css"/>
+    <link rel="stylesheet" href="../css/imgUp.css">
+    <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../js/imgUp.js"></script>
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><span>系统管理</span></li>
+    <li><a href="system.html">系统设置</a></li>
+    <li class="active">公司Logo</li>
+</ol>
+<div class="container-fluid">
+    <div class="row">
+
+
+    </div>
+    <div class="row mr_t_20">
+        <div class="col-sm-12">
+            <div class="form-group btad">
+                <label class="">公司Logo：</label>
+                <div class="inlineblock logoDiv">
+                    <img src="./../images/logo.jpg" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form action="">
+            <div class="col-sm-12 ">
+                <label class="">更改Logo：</label>
+                <div class="card inlineblock">
+                    <div class="img-box full">
+                        <section class="img-section">
+                            <!-- 						<p class="up-p">作品图片：<span class="up-span">最多可以上传5张图片，马上上传</span></p>
+                             -->
+                            <div class="z_photo upimg-div clear">
+                                <section class="z_file fl">
+                                    <img src="../images/uploadTips.png" class="add-img">
+                                    <input type="file" data-descriptions="file" data-required="true"
+                                           name="file" id="file" class="file" value=""
+                                           accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="mask works-mask">
+                        <div class="mask-content">
+                            <p class="del-p ">您确定要删除图片吗？</p>
+                            <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span>
+                            </p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="">
+                    <button id="add" type="button" class="btn btn-primary"
+                            data-target="#myModal" data-toggle="modal">上传
+                    </button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script>
+    $('#add').click(function () {
+        $("#file").val();
+        $(".z_file").show();
+        $(".up-section").remove();
+    })
+</script>
+</body>
+</html>

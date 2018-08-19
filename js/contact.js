@@ -26,7 +26,7 @@ $(function () {
         var phone2 = $("#phone2").val();
         var address1 = $("#address1").val();
         var address2 = $("#address2").val();
-        alert('保存')
+        $("#failModal").modal('show');
     });
     // 清空
     $('#myModal').on('hide.bs.modal', function () {

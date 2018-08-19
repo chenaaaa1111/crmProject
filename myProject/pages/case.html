@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布案例</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/imgUp.css">
+    <link rel="stylesheet" href="../css/case.css"/>
+    <link rel="stylesheet" href="../css/page.css"/>
+    <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var opt = {
+            imgMaxSize: 5
+        }
+    </script>
+    <script src="./../js/imgUp.js"></script>
+    <script src="../js/page.js"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><span>案例管理</span></li>
+    <li class="active">发布案例</li>
+</ol>
+<div class="container-fluid">
+    <div class="row">
+        <div class="btad">
+            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">添加案例</button>
+        </div>
+    </div>
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="hideCol">ID</th>
+                    <th>标题</th>
+                    <th>描述</th>
+                    <th>类型</th>
+                    <th>图片</th>
+                    <th>点赞数量</th>
+                    <th class="operation">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="title">Adidas运动背包2018秋季新款1</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市1</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="count">15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">002</td>
+                    <td class="title">Adidas运动背包2018秋季新款2</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市2</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="count">15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">003</td>
+                    <td class="title">Adidas运动背包2018秋季新款3</td>
+                    <td class="describe">Adidas运动背包2018秋季新款，炫酷黑，青年绿隆重上市3</td>
+                    <td class="classify">运动类</td>
+                    <td class="images">
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                        <img src="../images/user.png"/>
+                    </td>
+                    <td class="count">15</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pageBox"></div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加案例</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">上传图片</label>
+                        <div class="col-sm-10 ylimg">
+                            <div class="card">
+                                <div class="img-box full">
+                                    <section class="img-section">
+                                        <!-- 						<p class="up-p">作品图片：<span class="up-span">最多可以上传5张图片，马上上传</span></p>
+                                         -->
+                                        <div class="z_photo upimg-div clear">
+                                            <section class="z_file fl">
+                                                <img src="../images/uploadTips.png" class="add-img">
+                                                <input type="file" data-descriptions="file" data-required="true"
+                                                       name="file" id="file" class="file" value=""
+                                                       accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
+                                            </section>
+                                        </div>
+                                    </section>
+                                </div>
+                                <aside class="mask works-mask">
+                                    <div class="mask-content">
+                                        <p class="del-p ">您确定要删除图片吗？</p>
+                                        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+                                    </div>
+                                </aside>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="title"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="classify" class="col-sm-2 control-label">类型</label>
+                        <div class="col-sm-10">
+                            <!--<input type="text" class="form-control" id="classify"/>-->
+                            <select class="form-control" name="classify" id="classify">
+                                <option value="">请选择</option>
+                                <option value="服装类">服装类</option>
+                                <option value="食品类">食品类</option>
+                                <option value="运动类">运动类</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="describe" class="col-sm-2 control-label">描述</label>
+                        <div class="col-sm-10">
+                            <textarea id="describe" class="form-control describe" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="imgModalLabel">添加产品</h4>
+            </div>
+            <div class="modal-body">
+                <img class="ylPic" src="" alt=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/case.js"></script>
+</body>
+</html>

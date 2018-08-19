@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作员管理</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/worker.css"/>
+    <link rel="stylesheet" href="../css/page.css"/>
+    <script src="../bootstrap/js/jquery-1.11.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/page.js"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><span>系统管理</span></li>
+    <li class="active">操作员管理</li>
+</ol>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <button id="add" type="button" class="btn btn-primary" data-toggle="modal">添加员工</button>
+        </div>
+    </div>
+    <div class="row tableRow">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="hideCol">ID</th>
+                    <th>员工编号</th>
+                    <th>员工姓名</th>
+                    <th>手机号</th>
+                    <th>账号</th>
+                    <th>密码</th>
+                    <th>状态</th>
+                    <th class="operation">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">禁用</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">禁用</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hideCol">001</td>
+                    <td class="number">ISO9001</td>
+                    <td class="name">支付宝</td>
+                    <td class="phone">123456789</td>
+                    <td class="user">123456789</td>
+                    <td class="password">abc123</td>
+                    <td class="status">启用</td>
+                    <td class="operation">
+                        <button type="button" class="btn btn-primary btn-xs editRow">编辑</button>
+                        <button type="button" class="btn btn-danger btn-xs delete">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pageBox"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加员工</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="number" class="col-sm-2 control-label">员工编号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="number"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">员工姓名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">手机号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="phone"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="user" class="col-sm-2 control-label">账号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="user"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">状态</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadio" value="启用" checked> 启用
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadio" value="禁用"> 禁用
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/worker.js"></script>
+</body>
+</html>

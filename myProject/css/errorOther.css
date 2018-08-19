@@ -1,0 +1,24 @@
+.wrap{
+    position: absolute;width: 700px;height: 250px;
+    top: 50%;left: 50%;
+    margin-top: -125px;margin-left: -350px;
+
+}
+.inner{
+    width: 100%;height: 100%;position: relative;
+}
+.info{
+    margin-right: 170px;
+}
+.code{font-weight: bold;}
+.iconBox{
+    width: 162px;height: 100%;right: 0;top: 0;position: absolute;
+    background: url("../images/error.png") no-repeat;
+}
+.reason{position: relative;}
+.reason:after{display: block;height: 0;content: "";clear: both;}
+.reason .reasonTitle{font-size: 16px;float: left;padding: 8px 0px;width: 90px;}
+.reason .error{
+    color: red;float: left;padding: 8px 0px;width: 440px;
+    font-size: 16px;line-height: 24px;
+}
