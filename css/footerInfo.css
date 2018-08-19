@@ -14,3 +14,31 @@
     position: absolute;top: 0;left: 0;
 }
 .fileName{line-height: 34px;}
+
+/*imgup插件*/
+.card{
+    vertical-align: middle;
+}
+.z_file .add-img{
+    width: 100px;
+}
+.upimg-div .up-section{
+    width: 100px;
+}
+.card{
+    vertical-align: middle;
+    border: 2px dashed #ccc;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding: 10px;
+}
+.img-box .upimg-div .z_file img{
+    max-width: 100%;display: block;margin: 0 auto;
+}
+#add{
+    margin-top: 20px;
+}
+.img-box .upimg-div .z_file{
+    margin-bottom: 0px;
+
+}
