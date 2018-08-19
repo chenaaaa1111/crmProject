@@ -8,7 +8,11 @@ $(function () {
             child: [
                 {
                     title: '数据统计',
-                    url: 'count.html'
+                    url: 'pages/count.html'
+                },
+                {
+                    title: '股权结构',
+                    url: ''
                 }
             ]
         },
@@ -160,7 +164,12 @@ $(function () {
         }
         $(this).addClass('current');
         var url = $(this).attr('data_url');
-        $('#myIframe').attr('src',url);
+        if(url != ''&& url != undefined) {
+            $('#myIframe').attr('src',url);
+        } else {
+            window.open("pages/error404.html","_self");
+        }
+
         return false;
     });
 });
