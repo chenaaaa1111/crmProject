@@ -4,7 +4,7 @@ $(function(){
 	var defaults = {
 		fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
 		fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
-		imgMaxSize:5
+		imgMaxSize:1
 	};
 	var option=opt||{};
 	console.log('opt',opt)
