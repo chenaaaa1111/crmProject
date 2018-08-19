@@ -17,7 +17,9 @@ $(function () {
     $(".contact").on("click", function () {
         window.open("contact.html","_self")
     });
+
     $(".error").on("click", function () {
         window.open("errorOther.html","_self")
     });
+
 });

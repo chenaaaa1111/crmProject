@@ -6,8 +6,9 @@ $(function(){
 		fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
 		imgMaxSize:5
 	};
+	var option=opt||{};
 	console.log('opt',opt)
-	defaults=$.extend({},defaults,opt);
+	defaults=$.extend({},defaults,option);
 	console.log('defaults',defaults);
 		/*点击图片的文本框*/
 	$(".file").change(function(){	 
