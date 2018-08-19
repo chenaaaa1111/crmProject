@@ -31,7 +31,7 @@
     padding: 10px;
 }
 .img-box .upimg-div .z_file img{
-    max-width: 100%;
+    max-width: 100%;display: block;margin: 0 auto;
 }
 #add{
     margin-top: 20px;

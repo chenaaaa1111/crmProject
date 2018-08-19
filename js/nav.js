@@ -8,7 +8,7 @@ $(function () {
             child: [
                 {
                     title: '数据统计',
-                    url: 'count.html'
+                    url: 'pages/count.html'
                 }
             ]
         },
