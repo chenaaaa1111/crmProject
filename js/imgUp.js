@@ -19,6 +19,7 @@ $(function(){
             var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
             var fileList = file.files; //获取的图片文件
             var input = $(this).parent();//文本框的父亲元素
+            var imgarray=localstorage.getItem("imgarray");
             var imgArr = [];
             //遍历得到的图片文件
             var numUp = imgContainer.find(".up-section").length;
@@ -56,7 +57,8 @@ $(function(){
 
                 }
                 imgArray.elem=$section;
-                console.log(imgArray)
+                console.log(imgArray);
+                localstorage.setItem('imgarray',JSON.stringify(imgArr));
             }
             setTimeout(function(){
                 $(".up-section").removeClass("loading");

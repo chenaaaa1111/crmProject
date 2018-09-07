@@ -45,8 +45,8 @@ $(function () {
         var title = $("#title").val();
         var describe = $("#describe").val();
         var classify = $("#classify").val();
-        var imgarry=imgArray.elem;
-        console.log('case',imgarry);
+        // var imgarry=imgArray.elem;
+        // console.log('case',imgarry);
         $("#failModal").modal('show');
     });
     // 清空

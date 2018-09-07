@@ -1,4 +1,4 @@
-var ImgUpLib={
+    var ImgUpLib={
     elem:' <div class="card">\n' +
     '                                <div class="img-box full">\n' +
     '                                    <section class="img-section">\n' +
@@ -30,8 +30,9 @@ var ImgUpLib={
             fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
             imgMaxSize:1
         };
+        var self=this;
        var opt=option||{};
-
+        console.log(this.imgArr);
         defaults=$.extend({},defaults,opt);
         /*点击图片的文本框*/
         $(defaults.el).append(this.elem);
@@ -41,7 +42,8 @@ var ImgUpLib={
             var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
             var fileList = file.files; //获取的图片文件
             var input = $(this).parent();//文本框的父亲元素
-            var imgArr = [];
+           console.log('222',self.imgArr)
+            var imgArr =[];
             //遍历得到的图片文件
             var numUp = imgContainer.find(".up-section").length;
             var totalNum = numUp + fileList.length;  //总的数量
@@ -50,7 +52,7 @@ var ImgUpLib={
             }
             else if(numUp < defaults.imgMaxSize){
                 fileList = validateUp(fileList);
-
+                self.imgArrfile.push(fileList);
                 for(var i = 0;i<fileList.length;i++){
                     var imgUrl = window.URL.createObjectURL(fileList[i]);
                     imgArr.push(imgUrl);
@@ -60,6 +62,26 @@ var ImgUpLib={
                     $span.appendTo($section);
 
                     var $img0 = $("<img class='close-upimg'>").on("click",function(event){
+                        var src=$(event.target).parent().find('.up-img').attr('src');
+                        var index= '';
+                        console.log(self.imgblob);
+                        console.log('src',src);
+                        var jindex='';
+                        for(var i in self.imgblob){
+                                if(self.imgblob[i].indexOf(src)>=0){
+                                    // for(var j in i){
+
+                                    // }
+                                    console.log('true',i,jindex);
+                                    jindex=i;
+                                        index=self.imgblob[i].indexOf(src);
+                                }
+                        }
+                        
+                        console.log('index',index);
+                        console.log('jindex',jindex);
+                        self.imgblob[jindex].splice(index,1);
+                        console.log(self.imgblob)
                         event.preventDefault();
                         event.stopPropagation();
                         $(".works-mask").show();
@@ -78,7 +100,9 @@ var ImgUpLib={
 
                 }
                 imgArray.elem=$section;
-                console.log(imgArray)
+                self.imgblob.push(imgArr);
+                console.log('1111',self.imgArr);
+
             }
             setTimeout(function(){
                 $(".up-section").removeClass("loading");
@@ -89,14 +113,11 @@ var ImgUpLib={
                 $(this).parent().hide();
             }
         });
+        $(".z_photo").delegate(".close-upimg","click",function(event){
 
-
-
-        $(".z_photo").delegate(".close-upimg","click",function(){
             $(".works-mask").show();
             delParent = $(this).parent();
         });
-
         $(".wsdel-ok").click(function(){
             $(".works-mask").hide();
             var numUp = delParent.siblings().length;
@@ -139,5 +160,10 @@ var ImgUpLib={
             return arrFiles;
         }
         
+    },
+    imgArrfile:[],
+    imgblob:[],
+    clearimg:function(){
+        this.imgArr=[];
     }
 }
