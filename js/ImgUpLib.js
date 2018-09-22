@@ -24,7 +24,6 @@ var ImgUpLib={
     init:function (option) {
         var delParent;
         var imgArray={};
-        var filei=[];
         var defaults = {
             el:"#imgUp",
             fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
@@ -41,9 +40,9 @@ var ImgUpLib={
             var file = document.getElementById(idFile);
             var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
             var fileList = file.files; //获取的图片文件
-            filei=fileList;
             var input = $(this).parent();//文本框的父亲元素
             var imgArr = [];
+            var index=0;
             //遍历得到的图片文件
             var numUp = imgContainer.find(".up-section").length;
             var totalNum = numUp + fileList.length;  //总的数量
@@ -52,20 +51,44 @@ var ImgUpLib={
             }
             else if(numUp < defaults.imgMaxSize){
                 fileList = validateUp(fileList);
-                filei=fileList;
+                // self.imgArrfile.push(fileList);
                 for(var i = 0;i<fileList.length;i++){
+                    var fileId='s'+index;
+                    self.imgArrfile[fileId]=fileList[i];
+                   self.imgArray.push(fileList[i]);
+                    index++;
                     var imgUrl = window.URL.createObjectURL(fileList[i]);
                     imgArr.push(imgUrl);
                     var $section = $("<section class='up-section fl loading'>");
                     imgContainer.prepend($section);
                     var $span = $("<span class='up-span'>");
                     $span.appendTo($section);
+                    var $iinput=$('<input type="file" style="display:none" class="imgFileInput" value="'+fileList[i]+'" />');
+                    $iinput.appendTo($section);
+                    var $img0 = $("<img data-img='"+fileId+"' class='close-upimg'>").on("click",function(event){
+                        var src=$(event.target).parent().find('.up-img').attr('src');
+                        var index= '';
 
-                    var $img0 = $("<img class='close-upimg'>").on("click",function(event){
+                        var jindex='';
+                        for(var i in self.imgblob){
+                                if(self.imgblob[i].indexOf(src)>=0){
+                                    jindex=i;
+                                        index=self.imgblob[i].indexOf(src);
+                                }
+                        }
+                        var indexs=$(event.target).data('img');
+
+                        // console.log('indexs',indexs);
+                        if(self.imgblob[jindex]){
+                                self.imgblob[jindex].splice(index,1);
+
+                        }
+
                         event.preventDefault();
                         event.stopPropagation();
                         $(".works-mask").show();
                         delParent = $(this).parent();
+                     $(".wsdel-ok").attr('data-sindex',indexs)
                     });
                     $img0.attr("src","../images/a7.png").appendTo($section);
                     var $img = $("<img class='up-img up-opcity'>");
@@ -78,10 +101,13 @@ var ImgUpLib={
                     var $input2 = $("<input id='tags' name='tags' value='' type='hidden'/>");
                     $input2.appendTo($section);
 
+
                 }
                 imgArray.elem=$section;
-                console.log(imgArray)
+                self.imgblob.push(imgArr);
+
             }
+
             setTimeout(function(){
                 $(".up-section").removeClass("loading");
                 $(".up-img").removeClass("up-opcity");
@@ -90,23 +116,33 @@ var ImgUpLib={
             if(numUp >= defaults.imgMaxSize){
                 $(this).parent().hide();
             }
-            return filei;
         });
 
+        $(".z_photo").delegate(".close-upimg","click",function(event){
 
-
-        $(".z_photo").delegate(".close-upimg","click",function(){
             $(".works-mask").show();
             delParent = $(this).parent();
         });
-
-        $(".wsdel-ok").click(function(){
+        var self=this;
+        $(".wsdel-ok").click(function(e){
+            var imgArray=[];
+            var srcindex=e.target.dataset.sindex;
+            console.log('uuee',e.target.dataset.sindex)
+            console.log('self.imgArrfile',self.imgArrfile)
+               delete  self.imgArrfile[srcindex];
+               for(var inn in self.imgArrfile){
+                    imgArray.push(self.imgArrfile[inn])
+               }
+               self.imgArray=imgArray;
+//
             $(".works-mask").hide();
             var numUp = delParent.siblings().length;
             if(numUp < (defaults.imgMaxSize+1)){
                 delParent.parent().find(".z_file").show();
             }
             delParent.remove();
+
+
         });
 
         $(".wsdel-no").click(function(){
@@ -120,7 +156,6 @@ var ImgUpLib={
                 var newStr = file.name.split("").reverse().join("");
                 if(newStr.split(".")[0] != null){
                     var type = newStr.split(".")[0].split("").reverse().join("");
-                    console.log(type+"===type===");
                     if(jQuery.inArray(type, defaults.fileType) > -1){
                         // 类型符合，可以上传
                         if (file.size >= defaults.fileSize) {
@@ -138,9 +173,15 @@ var ImgUpLib={
                 }
             }
             // localStorage.setItem('imgarray',arrFiles.toString())
-            // console.log(arrFiles)
             return arrFiles;
         }
-        return filei;
+
+    },
+    imgArray:[],
+    imgArrfile:{},
+    imgblob:[],
+    clearimg:function(){
+        this.imgArr=[];
+
     }
 }
