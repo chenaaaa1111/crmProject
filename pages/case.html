@@ -195,11 +195,11 @@
 <script src="./../js/ImgUpLib.js"></script>
 
 <script>
-    ImgUpLib.init({el:"#imgUp",
+   var imageArray=ImgUpLib.init({el:"#imgUp",
         fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
         fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
         imgMaxSize:5});
-
+console.log('imageAeeay',imageArray)
 </script>
 </body>
 </html>

@@ -24,6 +24,7 @@ var ImgUpLib={
     init:function (option) {
         var delParent;
         var imgArray={};
+        var filei=[];
         var defaults = {
             el:"#imgUp",
             fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
@@ -40,6 +41,7 @@ var ImgUpLib={
             var file = document.getElementById(idFile);
             var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
             var fileList = file.files; //获取的图片文件
+            filei=fileList;
             var input = $(this).parent();//文本框的父亲元素
             var imgArr = [];
             //遍历得到的图片文件
@@ -50,7 +52,7 @@ var ImgUpLib={
             }
             else if(numUp < defaults.imgMaxSize){
                 fileList = validateUp(fileList);
-
+                filei=fileList;
                 for(var i = 0;i<fileList.length;i++){
                     var imgUrl = window.URL.createObjectURL(fileList[i]);
                     imgArr.push(imgUrl);
@@ -88,6 +90,7 @@ var ImgUpLib={
             if(numUp >= defaults.imgMaxSize){
                 $(this).parent().hide();
             }
+            return filei;
         });
 
 
@@ -138,6 +141,6 @@ var ImgUpLib={
             // console.log(arrFiles)
             return arrFiles;
         }
-        
+        return filei;
     }
 }
