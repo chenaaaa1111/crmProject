@@ -1,4 +1,4 @@
-    var ImgUpLib={
+var ImgUpLib={
     elem:' <div class="card">\n' +
     '                                <div class="img-box full">\n' +
     '                                    <section class="img-section">\n' +
@@ -30,10 +30,8 @@
             fileSize         : 1024 * 1024 * 10,                  // 上传文件的大小 10M
             imgMaxSize:1
         };
-        var index=0;
-        var self=this;
        var opt=option||{};
-        console.log(this.imgArr);
+
         defaults=$.extend({},defaults,opt);
         /*点击图片的文本框*/
         $(defaults.el).append(this.elem);
@@ -43,8 +41,8 @@
             var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
             var fileList = file.files; //获取的图片文件
             var input = $(this).parent();//文本框的父亲元素
-           console.log('222',self.imgArr)
-            var imgArr =[];
+            var imgArr = [];
+            var index=0;
             //遍历得到的图片文件
             var numUp = imgContainer.find(".up-section").length;
             var totalNum = numUp + fileList.length;  //总的数量
@@ -70,7 +68,7 @@
                     var $img0 = $("<img data-img='"+fileId+"' class='close-upimg'>").on("click",function(event){
                         var src=$(event.target).parent().find('.up-img').attr('src');
                         var index= '';
-                       
+
                         var jindex='';
                         for(var i in self.imgblob){
                                 if(self.imgblob[i].indexOf(src)>=0){
@@ -78,8 +76,8 @@
                                         index=self.imgblob[i].indexOf(src);
                                 }
                         }
-                        var indexs=$(this).data('img');
-                        
+                        var indexs=$(event.target).data('img');
+
                         // console.log('indexs',indexs);
                         if(self.imgblob[jindex]){
                                 self.imgblob[jindex].splice(index,1);
@@ -121,14 +119,16 @@
         });
 
         $(".z_photo").delegate(".close-upimg","click",function(event){
-            
+
             $(".works-mask").show();
             delParent = $(this).parent();
         });
         var self=this;
         $(".wsdel-ok").click(function(e){
             var imgArray=[];
-            var srcindex=$(this).data('sindex');
+            var srcindex=e.target.dataset.sindex;
+            console.log('uuee',e.target.dataset.sindex)
+            console.log('self.imgArrfile',self.imgArrfile)
                delete  self.imgArrfile[srcindex];
                for(var inn in self.imgArrfile){
                     imgArray.push(self.imgArrfile[inn])
@@ -141,8 +141,8 @@
                 delParent.parent().find(".z_file").show();
             }
             delParent.remove();
-           
-             
+
+
         });
 
         $(".wsdel-no").click(function(){
@@ -175,12 +175,13 @@
             // localStorage.setItem('imgarray',arrFiles.toString())
             return arrFiles;
         }
-        
+
     },
     imgArray:[],
     imgArrfile:{},
     imgblob:[],
     clearimg:function(){
         this.imgArr=[];
+
     }
 }

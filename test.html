@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	  测试
+</body>
+     <script type="text/javascript" src="//acstatic-dun.126.net/tool.min.js"></script>
+	<script type="text/javascript">
+			var wm = null;
+		// 只需初始化一次
+		initWatchman({
+		    productNumber: 'e8d06d4b75500b76e1e5632974219ac4',
+		    onload: function (instance) {
+		        wm = instance
+		        wm && wm.start();
+		    }
+		});
+
+         // 处理点赞业务
+    function rise() {
+        // 调用登录保护SDK的getToken接口，通过接口回调的方式获取token
+        wm && wm.getToken('fe46a15e75e94faead9477957954102f', function(token) {
+            // 提交点赞业务请求
+            submit(token);
+        });
+    }
+
+	</script>
+</html>
